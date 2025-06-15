@@ -67,6 +67,11 @@ public class ViewController {
     public String pagoCPage() {
         return "US_PagoC";
     }
+
+    @GetMapping("/datosbd")
+    public String datosbd() {
+        return "US_DatosUsuario";
+    }
     // … si tienes más páginas (por ejemplo, US_Anuncios, US_PlanesYPrecios, etc.),
     // solo agrega más @GetMapping que devuelvan el nombre de la plantilla.
 }
