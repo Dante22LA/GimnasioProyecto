@@ -28,10 +28,9 @@
 </head>
 
 <body class="index-page">
-
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
-      <a href="/" class="logo d-flex align-items-center me-auto">
+      <a href="VA_Inicio.html" class="logo d-flex align-items-center me-auto">
         <img src="imgWeb/logo.png" alt="">
       </a>
       <nav id="navmenu" class="navmenu">
@@ -47,100 +46,41 @@
       <a id="btnLogin" class="btn-getstarted" href="/login" style="display: none;">Login</a>
       <a id="btnLogout" class="btn-getstarted" href="#" onclick="cerrarSesion()" style="display: none;">Cerrar
         Sesión</a>
-
     </div>
   </header>
 
   <main class="main">
-    <section id="hero" class="hero section dark-background">
-      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-        <div class="carousel-item active">
-          <img src="imgWeb/C_01.jpg" alt="">
-        </div>
-        <div class="carousel-item">
-          <img src="imgWeb/C_02.jpg" alt="">
-        </div>
-        <div class="carousel-item">
-          <img src="imgWeb/C_03.jpg" alt="">
-        </div>
-        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-        </a>
-        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-        </a>
-        <ol class="carousel-indicators"></ol>
+    <div class="page-title light-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Administracion de Precios</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="tablaUsuarios.html">Administrar Usuarios</a></li>
+            <li><a href="/precios">Administrar Precios</a></li>
+            <li><a href="/suscripciones">Suscripciones</a></li>
+          </ol>
+        </nav>
       </div>
+    </div>
+    <h2 style="margin-top: 40px;">Lista de Planes</h2>
+    <table id="tablaPlanes" class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Duración (Meses)</th>
+          <th>Precio</th>
+          <th>Descripción</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody></tbody> <!-- ¡Esto es obligatorio para insertar filas con JavaScript! -->
+    </table>
 
-    </section>
-    <section id="about" class="about section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Listo para el reto?</h2>
-        <p>Sobre nosotros<br></p>
-      </div>
 
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <p>
-              Somos un gimnasio líder en innovación y comunidad, en el cual creamos un
-              ambiente motivador, entretenido y accesible donde nuestros miembros no solo
-              entrenen, sino que se sientan parte de una experiencia enriquecedora en
-              comunidad con los demás miembros de nuestro gimnasio.
-            </p>
-            <ul>
-              <li><i class="bi bi-check2-circle"></i> <span>Pisos exclusivos destinados a aérobicos.</span></li>
-              <li><i class="bi bi-check2-circle"></i> <span>Pisos diseñados para musculación pesada con máquinas.</span>
-              </li>
-              <li><i class="bi bi-check2-circle"></i> <span>Área dedicada para cardio y ejercicios funcionales.</span>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <p>Nos centramos en ofrecer servicios integrales que combinan entrenamiento
-              físico, programas personalizados y actividades grupales, dirigidos a mejorar el
-              bienestar físico y mental de sus usuarios en comunidad.</p>
-            <a href="US_Anuncios.html" class="read-more"><span>Anuncios</span><i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="clients" class="clients section light-background">
-    </section>
-
-    <section id="services" class="services section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Animate a Visitarnos</h2>
-        <p>Nuestras Sedes<br></p>
-      </div>
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-card-checklist icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a class="stretched-link">Sede Principal</a></h4>
-                <p class="description">Mz B Lote 45, Esteras 2 - Ancon
-                  Altura paradero Chacas</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-card-checklist icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a class="stretched-link">Sede Secundaria</a></h4>
-                <p class="description">Esteras II Mz. B Lt. 45, Ancón, Peru</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer id="footer" class="footer dark-background">
-
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
@@ -182,13 +122,100 @@
           Norte</a>
       </div>
     </div>
-
   </footer>
 
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      fetch("/api/planes")
+        .then(response => response.json())
+        .then(data => {
+          const tbody = document.querySelector("#tablaPlanes tbody");
+          tbody.innerHTML = "";
+
+          data.forEach(plan => {
+            const row = document.createElement("tr");
+            row.innerHTML = `
+    <td><input type="text" value="${plan.idPlan}" readonly class="form-control-plaintext" /></td>
+    <td><input type="text" value="${plan.nombre}" id="nombre-${plan.idPlan}" class="form-control" /></td>
+    <td><input type="number" value="${plan.duracionMeses}" id="duracion-${plan.idPlan}" class="form-control" /></td>
+    <td><input type="number" value="${plan.precio}" min="0" step="0.01" id="precio-${plan.idPlan}" class="form-control" /></td>
+    <td><input type="text" value="${plan.descripcion}" id="descripcion-${plan.idPlan}" class="form-control" /></td>
+    <td>
+      <button class="btn btn-primary btn-sm" onclick="guardarCambios(${plan.idPlan})">Guardar</button>
+      <button class="btn btn-danger btn-sm" onclick="eliminarPlan(${plan.idPlan})">Eliminar</button>
+      <span class="text-success ms-2" id="msg-${plan.idPlan}" style="display:none;">✔</span>
+    </td>
+  `;
+            tbody.appendChild(row);
+          });
+        });
+    });
+
+  </script>
+
+  <script>
+    // Función para guardar cambios de un plan específico
+    function guardarCambios(idPlan) {
+      const nombre = document.getElementById(`nombre-${idPlan}`).value;
+      const duracion = parseInt(document.getElementById(`duracion-${idPlan}`).value);
+      const precio = parseFloat(document.getElementById(`precio-${idPlan}`).value);
+      const descripcion = document.getElementById(`descripcion-${idPlan}`).value;
+
+      const planActualizado = {
+        nombre: nombre,
+        duracionMeses: duracion,
+        precio: precio,
+        descripcion: descripcion
+      };
+
+      fetch(`/api/planes/${idPlan}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(planActualizado)
+      })
+        .then(response => {
+          if (response.ok) {
+            document.getElementById(`msg-${idPlan}`).style.display = "inline";
+            setTimeout(() => {
+              document.getElementById(`msg-${idPlan}`).style.display = "none";
+            }, 2000);
+          } else {
+            alert("Error al actualizar el plan");
+          }
+        })
+        .catch(error => {
+          console.error("Error en la actualización:", error);
+        });
+    }
+
+    // Función para eliminar un plan
+    function eliminarPlan(idPlan) {
+      if (!confirm(`¿Estás seguro de eliminar el plan con ID ${idPlan}?`)) return;
+
+      fetch(`/api/planes/${idPlan}`, {
+        method: 'DELETE'
+      })
+        .then(response => {
+          if (response.ok) {
+            alert("Plan eliminado correctamente");
+            location.reload();
+          } else {
+            alert("Error al eliminar el plan");
+          }
+        })
+        .catch(error => {
+          console.error("Error en la eliminación:", error);
+        });
+    }
+  </script>
+
+
 
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
@@ -201,9 +228,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <script src="assets/js/main.js"></script>
-
   <script src="assets/js/session.js"></script>
-
 </body>
 
 </html>

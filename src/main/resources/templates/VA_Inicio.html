@@ -28,10 +28,9 @@
 </head>
 
 <body class="index-page">
-
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
-      <a href="/" class="logo d-flex align-items-center me-auto">
+      <a href="/inicio" class="logo d-flex align-items-center me-auto">
         <img src="imgWeb/logo.png" alt="">
       </a>
       <nav id="navmenu" class="navmenu">
@@ -41,96 +40,79 @@
           <li><a href="US_Anuncios.html" class="active">Contenido</a></li>
           <li><a href="/planes" class="active">Planes y Precios</a></li>
           <li><a href="/admin-panel" class="active">Admin</a></li>
+
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
       <a id="btnLogin" class="btn-getstarted" href="/login" style="display: none;">Login</a>
       <a id="btnLogout" class="btn-getstarted" href="#" onclick="cerrarSesion()" style="display: none;">Cerrar
         Sesión</a>
-
     </div>
   </header>
 
   <main class="main">
-    <section id="hero" class="hero section dark-background">
-      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-        <div class="carousel-item active">
-          <img src="imgWeb/C_01.jpg" alt="">
-        </div>
-        <div class="carousel-item">
-          <img src="imgWeb/C_02.jpg" alt="">
-        </div>
-        <div class="carousel-item">
-          <img src="imgWeb/C_03.jpg" alt="">
-        </div>
-        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-        </a>
-        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-        </a>
-        <ol class="carousel-indicators"></ol>
+    <div class="page-title light-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Bienvenido Administrador</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="tablaUsuarios.html">Administrar Usuarios</a></li>
+            <li><a href="/precios">Administrar Precios</a></li>
+            <li><a href="/suscripciones">Suscripciones</a></li>
+          </ol>
+        </nav>
       </div>
+    </div>
 
-    </section>
-    <section id="about" class="about section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Listo para el reto?</h2>
-        <p>Sobre nosotros<br></p>
-      </div>
-
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <p>
-              Somos un gimnasio líder en innovación y comunidad, en el cual creamos un
-              ambiente motivador, entretenido y accesible donde nuestros miembros no solo
-              entrenen, sino que se sientan parte de una experiencia enriquecedora en
-              comunidad con los demás miembros de nuestro gimnasio.
-            </p>
-            <ul>
-              <li><i class="bi bi-check2-circle"></i> <span>Pisos exclusivos destinados a aérobicos.</span></li>
-              <li><i class="bi bi-check2-circle"></i> <span>Pisos diseñados para musculación pesada con máquinas.</span>
-              </li>
-              <li><i class="bi bi-check2-circle"></i> <span>Área dedicada para cardio y ejercicios funcionales.</span>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <p>Nos centramos en ofrecer servicios integrales que combinan entrenamiento
-              físico, programas personalizados y actividades grupales, dirigidos a mejorar el
-              bienestar físico y mental de sus usuarios en comunidad.</p>
-            <a href="US_Anuncios.html" class="read-more"><span>Anuncios</span><i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="clients" class="clients section light-background">
-    </section>
-
-    <section id="services" class="services section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Animate a Visitarnos</h2>
-        <p>Nuestras Sedes<br></p>
-      </div>
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-card-checklist icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a class="stretched-link">Sede Principal</a></h4>
-                <p class="description">Mz B Lote 45, Esteras 2 - Ancon
-                  Altura paradero Chacas</p>
-              </div>
+    <section id="about-2" class="about-2 section">
+      <div class="container" data-aos="fade-up">
+        <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-5">
+            <div class="about-img">
+              <img src="/imgVA/imagen1.png" class="img-fluid" alt="">
             </div>
           </div>
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-card-checklist icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a class="stretched-link">Sede Secundaria</a></h4>
-                <p class="description">Esteras II Mz. B Lt. 45, Ancón, Peru</p>
+          <div class="col-lg-7">
+            <h3 class="pt-0 pt-lg-5">Como usar estas vistas:</h3>
+            <ul class="nav nav-pills mb-3">
+              <li><a class="nav-link active" data-bs-toggle="pill" href="#about-2-tab1">Administrar y Visualizar
+                  Usuarios</a></li>
+              <li><a class="nav-link" data-bs-toggle="pill" href="#about-2-tab2">Administrar Precios</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="about-2-tab1">
+                <p class="fst-italic">En el apartado de Administracion y Visualizacion de Usuarios de usuarios se podra
+                  realizar:</p>
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>Visualizacion de Usuarios:</h4>
+                </div>
+                <p>Se podran observar todos los usuarios registrados con sus respectivos elementos.</p>
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>Editar Usuarios:</h4>
+                </div>
+                <p>Se podra editar la informacion de los usuarios mediante un boton de guardado.</p>
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>Eliminar Usuarios:</h4>
+                </div>
+                <p>Se podran eliminar usuarios con un boton el cual pide doble confirmacion.</p>
+              </div>
+
+              <div class="tab-pane fade" id="about-2-tab2">
+                <p class="fst-italic">En el apartado de Administracion de precios se podra realizar:</p>
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>Visualizacion de los precios de los planes:</h4>
+                </div>
+                <p>Cada plan tiene un precio y se podran observar en la tabla correspondiente.</p>
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>Cambiar los precios de los planes:</h4>
+                </div>
+                <p>Mediante un boton y un area de texto se podran cambiar los precios de planes para los usuarios (no
+                  afecta a usuarios que ya hayan realizado un pago con anterioridad).</p>
               </div>
             </div>
           </div>
@@ -140,7 +122,6 @@
   </main>
 
   <footer id="footer" class="footer dark-background">
-
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
@@ -201,8 +182,16 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <script src="assets/js/main.js"></script>
-
+  <script>
+    const dniUsuario = localStorage.getItem("dniUsuario");
+    console.log("DNI cargado desde localStorage:", dniUsuario); // <-- AÑADIDO
+    if (!dniUsuario) {
+      alert("No has iniciado sesión. Redirigiendo al login.");
+      window.location.href = "/login";
+    }
+  </script>
   <script src="assets/js/session.js"></script>
+  <script src="assets/js/adminOnly.js"></script>
 
 </body>
 
